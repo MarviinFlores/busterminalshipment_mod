@@ -1,8 +1,7 @@
 package com.example.busterminalshipment.Interface;
 
 
-import com.example.retroapilusgson.Model.Post;
-import com.example.retroapilusgson.Model.Shipment;
+import com.example.busterminalshipment.Model.Shipment;
 
 import java.util.List;
 
@@ -12,7 +11,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-public interface JasonPlaceHolder {
+public interface jsonPlaceHolder {
     // API jsonplaceholder.com   example of GET  info from FAKE API
     /**@GET("posts")
     Call<List<Post>> getPosts();*/
