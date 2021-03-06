@@ -74,21 +74,22 @@ public class Shipment {
     public int TurnXKey;
 
     //------------------------------------------------------------------------------------
-    // @SerializedName("CreationDateTime")
-    //public LocalDateTime CreationDateTime;
+     @SerializedName("CreationDateTime")
+     public LocalDateTime CreationDateTime;
 
     @SerializedName("CreationAuthor")
     public String CreationAuthor;
 
-    //@SerializedName("LastModificationDateTime")
-    //public LocalDateTime LastModificationDateTime;
+    @SerializedName("LastModificationDateTime")
+    public LocalDateTime LastModificationDateTime;
 
     @SerializedName("LastModificationAuthor")
     public String LastModificationAuthor;
     //------------------------------------------------------------------------------------
     //AUXILIAR PROPERTIES
-    /**   @SerializedName("_Customer")
-    public Customer _Customer;
+    /**
+     @SerializedName("_Customer")
+     public Customer _Customer;
      @SerializedName("_Bus")
      public Bus _Bus;
      @SerializedName("_BusDriverOrHelper")
@@ -251,13 +252,13 @@ public class Shipment {
         TurnXKey = turnXKey;
     }
 
-    //public LocalDateTime getCreationDateTime() {
-    //  return CreationDateTime;
-    //}
+    public LocalDateTime getCreationDateTime() {
+      return CreationDateTime;
+    }
 
-    // public void setCreationDateTime(LocalDateTime creationDateTime) {
-    //   CreationDateTime = creationDateTime;
-    //}
+     public void setCreationDateTime(LocalDateTime creationDateTime) {
+       CreationDateTime = creationDateTime;
+    }
 
     public String getCreationAuthor() {
         return CreationAuthor;
@@ -267,11 +268,11 @@ public class Shipment {
         CreationAuthor = creationAuthor;
     }
 
-    //public LocalDateTime getLastModificationDateTime() {        return LastModificationDateTime;    }
+    public LocalDateTime getLastModificationDateTime() {        return LastModificationDateTime;    }
 
-    //public void setLastModificationDateTime(LocalDateTime lastModificationDateTime) {
-    //  LastModificationDateTime = lastModificationDateTime;
-    //}
+    public void setLastModificationDateTime(LocalDateTime lastModificationDateTime) {
+      LastModificationDateTime = lastModificationDateTime;
+    }
 
     public String getLastModificationAuthor() {
         return LastModificationAuthor;
@@ -281,7 +282,8 @@ public class Shipment {
         LastModificationAuthor = lastModificationAuthor;
     }
 
-    /**  //AUXILIAR PROPERTIES
+     //AUXILIAR PROPERTIES
+    /**
      public Customer get_Customer() {
      return _Customer;
      }
@@ -299,7 +301,7 @@ public class Shipment {
      }
      public void set_BusDriverOrHelper(BusDriverOrHelper _BusDriverOrHelper) {
      this._BusDriverOrHelper = _BusDriverOrHelper;
-     }*/
+     }**/
 }
 
 //END OF AUXILIAR PROPERTIES

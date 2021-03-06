@@ -91,25 +91,26 @@ public class MainActivity extends AppCompatActivity {
 
                 String content = "";
 
-                content = "Key:  " + response.body().getXKey() +
-                        "\n SenderCustomerKey:  " + response.body().getSenderCustomerXKey() +
-                        "\n ReceiverFullName:  " + response.body().getReceiverFullName() +
-                        "\n ReceiverMobilPhone:  " + response.body().getReceiverMobilPhone() +
-                        "\n ReceiverEmail:  " + response.body().getReceiverEmail() +
-                        "\n Password:  " + response.body().getXPassword() +
+                content = "Clave:  " + response.body().getXKey() +
+                        "\n Numero Cliente:  " + response.body().getSenderCustomerXKey() +
+                        "\n Destinatario:  " + response.body().getReceiverFullName() +
+                        "\n Celular:  " + response.body().getReceiverMobilPhone() +
+                        "\n E-mail:  " + response.body().getReceiverEmail() +
+                        "\n Contrasena:  " + response.body().getXPassword() +
                         "\n TrackingNumber:  " + response.body().getTrackingNumber() +
-                        "\n Date:  " + response.body().getXDate() +
-                        "\n From:  " + response.body().getXFrom() +
-                        "\n To:  " + response.body().getXTo() +
-                        "\n Content:  " + response.body().getXContent() +
-                        "\n DeclaredAmount:  " + response.body().getDeclaredAmount() +
-                        "\n Fee:  " + response.body().getFee() +
-                        "\n PayWhenReceived:  " + response.body().getPayWhenReceived() +
-                        "\n PaymentStatus:  " + response.body().getPaymentStatus() +
-                        "\n InvoiceValue:  " + response.body().getInvoiceXValue() +
-                        "\n ShipmentStatus:  " + response.body().getShipmentStatus() +
-                        "\n BusKey:  " + response.body().getBusXKey() +
-                        "\n BusDriverKey:  " + response.body().getBusDriverXKey();
+                        "\n Fecha:  " + response.body().getXDate() +
+                        "\n Origen:  " + response.body().getXFrom() +
+                        "\n Destino:  " + response.body().getXTo() +
+                        "\n Contenido:  " + response.body().getXContent() +
+                        "\n Valor Declarado:  " + response.body().getDeclaredAmount() +
+                        "\n Costo de Envio:  " + response.body().getFee() +
+                        "\n Al Cobro:  " + response.body().getPayWhenReceived() +
+                        "\n Estado de Pago:  " + response.body().getPaymentStatus() +
+                        "\n Valor:  " + response.body().getInvoiceXValue() +
+                        "\n Estado de Encomienda:  " + response.body().getShipmentStatus() +
+                        "\n Bus #:  " + response.body().getBusXKey() +
+                        "\n Conductor #:  " + response.body().getBusDriverXKey()+
+                        "\n Usuario:  " + response.body().getCreationAuthor();
 
 
                 mJsoTxtView.append(content);
