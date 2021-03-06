@@ -91,25 +91,25 @@ public class MainActivity extends AppCompatActivity {
 
                 String content = "";
 
-                content = "XKey:" + response.body().getXKey() +
-                        "\n SenderCustomerXKey:" + response.body().getSenderCustomerXKey() +
-                        "\n ReceiverFullName:" + response.body().getReceiverFullName() +
-                        "\n ReceiverMobilPhone:" + response.body().getReceiverMobilPhone() +
-                        "\n ReceiverEmail:" + response.body().getReceiverEmail() +
-                        "\n XPassword:" + response.body().getXPassword() +
-                        "\n TrackingNumber:" + response.body().getTrackingNumber() +
-                        "\n XDate:" + response.body().getXDate() +
-                        "\n XFrom:" + response.body().getXFrom() +
-                        "\n XTo:" + response.body().getXTo() +
-                        "\n XContent:" + response.body().getXContent() +
-                        "\n DeclaredAmount:" + response.body().getDeclaredAmount() +
-                        "\n Fee:" + response.body().getFee() +
-                        "\n PayWhenReceived:" + response.body().getPayWhenReceived() +
-                        "\n PaymentStatus:" + response.body().getPaymentStatus() +
-                        "\n InvoiceXValue:" + response.body().getInvoiceXValue() +
-                        "\n ShipmentStatus:" + response.body().getShipmentStatus() +
-                        "\n BusXKey:" + response.body().getBusXKey() +
-                        "\n BusDriverXKey:" + response.body().getBusDriverXKey();
+                content = "Key:  " + response.body().getXKey() +
+                        "\n SenderCustomerKey:  " + response.body().getSenderCustomerXKey() +
+                        "\n ReceiverFullName:  " + response.body().getReceiverFullName() +
+                        "\n ReceiverMobilPhone:  " + response.body().getReceiverMobilPhone() +
+                        "\n ReceiverEmail:  " + response.body().getReceiverEmail() +
+                        "\n Password:  " + response.body().getXPassword() +
+                        "\n TrackingNumber:  " + response.body().getTrackingNumber() +
+                        "\n Date:  " + response.body().getXDate() +
+                        "\n From:  " + response.body().getXFrom() +
+                        "\n To:  " + response.body().getXTo() +
+                        "\n Content:  " + response.body().getXContent() +
+                        "\n DeclaredAmount:  " + response.body().getDeclaredAmount() +
+                        "\n Fee:  " + response.body().getFee() +
+                        "\n PayWhenReceived:  " + response.body().getPayWhenReceived() +
+                        "\n PaymentStatus:  " + response.body().getPaymentStatus() +
+                        "\n InvoiceValue:  " + response.body().getInvoiceXValue() +
+                        "\n ShipmentStatus:  " + response.body().getShipmentStatus() +
+                        "\n BusKey:  " + response.body().getBusXKey() +
+                        "\n BusDriverKey:  " + response.body().getBusDriverXKey();
 
 
                 mJsoTxtView.append(content);
