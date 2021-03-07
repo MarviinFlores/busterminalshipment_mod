@@ -108,9 +108,11 @@ public class MainActivity extends AppCompatActivity {
                         "\n Estado de Pago:  " + response.body().getPaymentStatus() +
                         "\n Valor:  " + response.body().getInvoiceXValue() +
                         "\n Estado de Encomienda:  " + response.body().getShipmentStatus() +
+                        "\n Entregada por  :  "+response.body().getLastModificationAuthor()+
+                        "\n Fecha de Entrega :  "+response.body().getLastModificationDateTime()+
                         "\n Bus #:  " + response.body().getBusXKey() +
                         "\n Conductor #:  " + response.body().getBusDriverXKey()+
-                        "\n Usuario:  " + response.body().getCreationAuthor();
+                        "\n Creada por:  " + response.body().getCreationAuthor();
 
 
                 mJsoTxtView.append(content);

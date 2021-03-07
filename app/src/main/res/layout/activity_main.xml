@@ -29,6 +29,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
         android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +72,11 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="italic"
-
+            android:ems="20"
+            android:shadowColor="#8a6603"
+            android:shadowDx="3"
+            android:shadowDy="6"
+            android:shadowRadius="3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
